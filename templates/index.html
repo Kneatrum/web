@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
     <title>Martin Mwiti</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary py-3">
+<body data-spy="scroll" data-bs-target=".site-navbar-target">
+
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary py-3 site-navbar-target fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Martin Mwiti</a>
       
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="#navmenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav nav ml-auto">
-              <li class="nav-item"><a href="#home" class="nav-item nav-link active" >Home <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a href="#about" class=" nav-link">About</a></li>
-              <li class="nav-item"><a href="#resume" class=" nav-link">Resume</a></li>
-              <li class="nav-item"><a href="#services" class=" nav-link">Services</a></li>
-              <li class="nav-item"><a href="#skills" class=" nav-link">Skills</a></li>
-              <li class="nav-item"><a href="#projects" class=" nav-link">Projects</a></li>
-              <li class="nav-item"><a href="#blog" class=" nav-link">Blog</a></li>
-              <li class="nav-item"><a href="#contacts" class=" nav-link">Contacts</a></li>
-              <li class="nav-item"><a class=" nav-link disabled" href="#disabeld">Disabled</a></li>
+              <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+              <li class="nav-item"><a href="#about-section" class=" nav-link"><span>About</span></a></li>
+              <li class="nav-item"><a href="#resume-section" class=" nav-link"><span>Resume</span></a></li>
+              <li class="nav-item"><a href="#services-section" class=" nav-link"><span>Services</span></a></li>
+              <li class="nav-item"><a href="#skills-section" class=" nav-link"><span>Skills</span></a></li>
+              <li class="nav-item"><a href="#projects-section" class=" nav-link"><span>Projects</span></a></li>
+              <li class="nav-item"><a href="#blog-section" class=" nav-link"><span></span>Blog</a></li>
+              <li class="nav-item"><a href="#contacts-section" class=" nav-link"><span></span>Contacts</a></li>
+              <li class="nav-item"><a class=" nav-link disabled" href="#disabeld-section"><span>Disabled</span></a></li>
             </ul>
         </div>
       </div> 
     </nav>
 
-    <!-- Showcase -->
-    <section class="bg-white p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <!-- Home section -->
+    <section class="bg-white p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="home-section">
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-center">
           <div>
-            <h6>Hello World &#128075;</h6>
+            <h6>Home section &#128075;</h6>
             <h3 class="lead">I am <span class="text-primary">Martin</span>, a tech enthusiast with a passion for embedded systems and software engineering.</h3>
           </div>
           <img class="img-fluid w-50 d-none d-sm-block" src="/static/images/martin.png" alt="Martin"/>
@@ -46,15 +47,35 @@
       </div>
     </section>
 
-    <!-- Blue section
-    <section class="bg-primary text-light p-5">
+    <!-- About section -->
+    <section class="bg-white p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="about-section">
       <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3 mb-md-0">My little playground</h3>
+        <div class="d-sm-flex align-items-center justify-content-center">
+          <div>
+            <h6>About Section &#128075;</h6>
+            <h3 class="lead">I am <span class="text-primary">Martin</span>, a tech enthusiast with a passion for embedded systems and software engineering.</h3>
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src="/static/images/martin.png" alt="Martin"/>
+
         </div>
       </div>
     </section>
-     -->
+
+    <!-- Resume section-->
+    <section class="bg-white p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="resume-section">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-center">
+          <div>
+            <h6>Resume section &#128075;</h6>
+            <h3 class="lead">I am <span class="text-primary">Martin</span>, a tech enthusiast with a passion for embedded systems and software engineering.</h3>
+          </div>
+          <img class="img-fluid w-50 d-none d-sm-block" src="/static/images/martin.png" alt="Martin"/>
+
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- Footer -->
     <footer class="p-5 bg-primary text-white text-center position-relative">
@@ -66,22 +87,9 @@
       </div>
     </footer>
 
-
-
-    <!--
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6 text-content">
-                <h6>Hello World &#128075;</h6>
-                <h3>I am Martin, a tech enthusiast with a passion for embedded systems and software engineering.</h3>
-            </div>
-            <div class="col-12 col-md-6">
-                <img class="image" src="/static/images/martin.png" class="rounded" alt="Martin" />
-            </div>
-        </div>
-    </div>
-    -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    
 </body>
 </html>
